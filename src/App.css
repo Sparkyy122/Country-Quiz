@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+  color: white;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("bg.jpg");
+}
+
+
+
+.questionNumbers {
+  width: 40px; /* Adjust as needed */
+  height: 40px; /* Must match width to maintain circle shape */
+  font-size: 20px;
+  padding: 10px; /* Adjust padding if necessary */
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+}
+
+.questionNumbers span {
+  display: inline-block;
+  vertical-align: middle;
+ 
+  margin-top: calc(50% - 0.5em); /* Adjusts vertical position of text */
+
+
+}
+.active {
+  background-image: linear-gradient(to right, #ff60bd, #ca92ff);
+}
+.not-active{
+  background-color: #373D6E;
+}
+.main{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #343963;
+  flex-direction:column;
+  height: 50vh;
+  width: 50vw;
+  border-radius: 20px;
+}
+.Numbers{
+  margin-bottom: 20px;
+}
+.Answers{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 20px 30px; /* Adjust spacing between grid items */
+  
+}
+.Answers button {
+    background-color: #393F70;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.Answers button:hover {
+  background-image: linear-gradient(to right, #ff60bd, #ca92ff);
+  cursor: pointer;
+  color: white;
+  transition:all 1s ease-in-out;
+}
